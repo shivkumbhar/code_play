@@ -415,6 +415,7 @@ a:focus-visible,.btn:focus-visible,select:focus-visible,input:focus-visible,text
 }
 /* PERF: paint containment on heavy sections */
 .sec{contain:layout style}
+main > section:not(:first-of-type){content-visibility:auto;contain-intrinsic-size:900px}
 .lg{will-change:auto}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Sunsetcoast Textile","url":"https://sunsetcoast.in/","logo":"https://sunsetcoast.in/hero.jpg","description":"Premium terry towel manufacturer in India for global retail and hospitality brands.","telephone":"+91 7019 772 259","sameAs":[]}</script>
@@ -438,7 +439,7 @@ a:focus-visible,.btn:focus-visible,select:focus-visible,input:focus-visible,text
 <div class="hbtns"><a href="#contact" class="btn btn-c">Request Catalogue<svg aria-hidden="true" class="arw" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a href="#products" class="btn btn-g">View Products</a></div>
 <div class="hstats"><div><div class="hsn">350&ndash;700</div><div class="hsl">GSM Range</div></div><div><div class="hsn">500+</div><div class="hsl">MOQ per SKU</div></div><div><div class="hsn">50+</div><div class="hsl">Countries</div></div></div>
 </div>
-<div class="hr"><img src="hero.jpg" alt="Indian textile craftsmanship" class="himg" loading="eager" fetchpriority="high" width="1200" height="1400"><div class="hov"></div>
+<div class="hr"><img src="hero.jpg" alt="Indian textile craftsmanship" class="himg" loading="eager" decoding="async" fetchpriority="high" width="1200" height="1400"><div class="hov"></div>
 <div class="pcards">
 <div class="pc"><div class="pci ic-c"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 14c0 3.31 3.58 6 8 6s8-2.69 8-6V5c0-1.66-3.58-3-8-3S4 3.34 4 5v9z"/></svg></div><div class="pcn">Bath Towels</div><div class="pcd">350&ndash;700 GSM</div></div>
 <div class="pc"><div class="pci ic-t"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/></svg></div><div class="pcn">Beach Towels</div><div class="pcd">Velour &middot; Jacquard</div></div>
@@ -521,18 +522,52 @@ a:focus-visible,.btn:focus-visible,select:focus-visible,input:focus-visible,text
 
 <footer role="contentinfo"><div class="ftop"><div><div class="flogo">Sunsetcoast <em>Textile</em></div><p class="fdesc">Premium terry towel manufacturer in India. Bath, beach and kitchen towels for global brands and hospitality groups.</p></div><div class="fcol"><h5>Products</h5><ul><li><a href="#products">Bath Towels</a></li><li><a href="#products">Beach Towels</a></li><li><a href="#products">Kitchen Towels</a></li><li><a href="#capabilities">Capabilities</a></li></ul></div><div class="fcol"><h5>Company</h5><ul><li><a href="#serve">Who We Serve</a></li><li><a href="#global">Global Reach</a></li><li><a href="#sustainability">Sustainability</a></li><li><a href="#quality">Quality</a></li></ul></div><div class="fcol"><h5>Contact</h5><ul><li><a href="/cdn-cgi/l/email-protection#09797b687f6067497a7c677a6c7d6a66687a7d276067"><span class="__cf_email__" data-cfemail="a7d7d5c6d1cec9e7d4d2c9d4c2d3c4c8c6d4d389cec9">[email&#160;protected]</span></a></li><li><a href="tel:+917019772259">+91 7019 772 259</a></li><li><a href="#faq">FAQ</a></li></ul></div></div><div class="fbot"><div class="fcopy">&copy; 2025 Sunsetcoast Textile. All rights reserved.</div><div class="fpls"><span class="fpl">Bath</span><span class="fpl">Beach</span><span class="fpl">Kitchen</span><span class="fpl">Private Label</span><span class="fpl">Ships Worldwide</span></div></div></footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-window.addEventListener('load',function(){setTimeout(function(){var pre=document.getElementById('preloader');if(pre)pre.classList.add('gone')},1700)});
-var nv=document.getElementById('nav');window.addEventListener('scroll',function(){if(nv)nv.classList.toggle('stuck',window.scrollY>40)},{passive:true});
-var pg=document.getElementById('prog');window.addEventListener('scroll',function(){if(!pg)return;var h=document.documentElement.scrollHeight-window.innerHeight;var pct=h>0?Math.round(window.scrollY/h*100):0;pg.style.width=pct+'%';pg.setAttribute('aria-valuenow',pct)},{passive:true});
-(function(){var h1=document.getElementById('hH1');if(!h1)return;h1.querySelectorAll('.blk,.ind').forEach(function(s){var n=Array.from(s.childNodes);s.innerHTML='';n.forEach(function(nd){if(nd.nodeType===3){nd.textContent.split(/(\s+)/).forEach(function(w){if(/^\s+$/.test(w))s.appendChild(document.createTextNode(w));else if(w.length){var d=document.createElement('span');d.className='word';d.textContent=w;s.appendChild(d)}})}else{var d=document.createElement('span');d.className='word';d.appendChild(nd.cloneNode(true));s.appendChild(d)}})});h1.querySelectorAll('.word').forEach(function(w,i){setTimeout(function(){w.classList.add('vis')},500+i*100)})})();
-var ro=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('vis')})},{threshold:.07,rootMargin:'0px 0px -30px 0px'});document.querySelectorAll('.rv,.rl,.rr').forEach(function(el){ro.observe(el)});
-var vo=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.querySelectorAll('.vrow').forEach(function(r,i){setTimeout(function(){r.classList.add('vis')},i*80)});vo.unobserve(x.target)}})},{threshold:.15});document.querySelectorAll('.cpan').forEach(function(p){vo.observe(p)});
-var so=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.querySelectorAll('.si').forEach(function(it,i){setTimeout(function(){it.classList.add('vis')},200+i*80)});so.unobserve(x.target)}})},{threshold:.2});document.querySelectorAll('.srvc').forEach(function(c){so.observe(c)});
-setTimeout(function(){document.querySelectorAll('.pc').forEach(function(p){p.classList.add('vis')})},800);
-var bg=document.getElementById('burger'),mn=document.getElementById('mn');if(bg&&mn){bg.addEventListener('click',function(){var o=mn.classList.toggle('open');bg.classList.toggle('x',o);bg.setAttribute('aria-expanded',String(o));mn.setAttribute('aria-hidden',String(!o));document.body.style.overflow=o?'hidden':''});document.querySelectorAll('.mnav a').forEach(function(a){a.addEventListener('click',function(){mn.classList.remove('open');bg.classList.remove('x');bg.setAttribute('aria-expanded','false');mn.setAttribute('aria-hidden','true');document.body.style.overflow=''})})}
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js" defer></script><script>
+(function(){
+  function hidePreloader(){var pre=document.getElementById('preloader');if(pre)pre.classList.add('gone')}
+  if(document.readyState==='complete')setTimeout(hidePreloader,220);else window.addEventListener('load',function(){setTimeout(hidePreloader,220)},{once:true});
+
+  var nv=document.getElementById('nav');
+  var pg=document.getElementById('prog');
+  var nl=Array.from(document.querySelectorAll('.nl a'));
+  var sections=Array.from(document.querySelectorAll('section[id]'));
+  var ticking=false;
+
+  function syncScrollUI(){
+    var y=window.scrollY;
+    if(nv)nv.classList.toggle('stuck',y>40);
+    if(pg){
+      var h=document.documentElement.scrollHeight-window.innerHeight;
+      var pct=h>0?Math.round(y/h*100):0;
+      pg.style.width=pct+'%';
+      pg.setAttribute('aria-valuenow',pct);
+    }
+    if(nl.length&&sections.length){
+      var c='';
+      for(var i=0;i<sections.length;i++)if(y>=sections[i].offsetTop-160)c=sections[i].id;
+      nl.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+c)});
+    }
+    ticking=false;
+  }
+
+  window.addEventListener('scroll',function(){if(!ticking){window.requestAnimationFrame(syncScrollUI);ticking=true}},{passive:true});
+  syncScrollUI();
+
+  (function(){var h1=document.getElementById('hH1');if(!h1)return;h1.querySelectorAll('.blk,.ind').forEach(function(s){var n=Array.from(s.childNodes);s.innerHTML='';n.forEach(function(nd){if(nd.nodeType===3){nd.textContent.split(/(\s+)/).forEach(function(w){if(/^\s+$/.test(w))s.appendChild(document.createTextNode(w));else if(w.length){var d=document.createElement('span');d.className='word';d.textContent=w;s.appendChild(d)}})}else{var d=document.createElement('span');d.className='word';d.appendChild(nd.cloneNode(true));s.appendChild(d)}})});h1.querySelectorAll('.word').forEach(function(w,i){setTimeout(function(){w.classList.add('vis')},500+i*100)})})();
+
+  function initObservers(){
+    var ro=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('vis')})},{threshold:.07,rootMargin:'0px 0px -30px 0px'});document.querySelectorAll('.rv,.rl,.rr').forEach(function(el){ro.observe(el)});
+    var vo=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.querySelectorAll('.vrow').forEach(function(r,i){setTimeout(function(){r.classList.add('vis')},i*80)});vo.unobserve(x.target)}})},{threshold:.15});document.querySelectorAll('.cpan').forEach(function(p){vo.observe(p)});
+    var so=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.querySelectorAll('.si').forEach(function(it,i){setTimeout(function(){it.classList.add('vis')},200+i*80)});so.unobserve(x.target)}})},{threshold:.2});document.querySelectorAll('.srvc').forEach(function(c){so.observe(c)});
+    setTimeout(function(){document.querySelectorAll('.pc').forEach(function(p){p.classList.add('vis')})},800);
+  }
+
+  if('requestIdleCallback' in window)requestIdleCallback(initObservers,{timeout:1200});else setTimeout(initObservers,200);
+
+  var bg=document.getElementById('burger'),mn=document.getElementById('mn');if(bg&&mn){bg.addEventListener('click',function(){var o=mn.classList.toggle('open');bg.classList.toggle('x',o);bg.setAttribute('aria-expanded',String(o));mn.setAttribute('aria-hidden',String(!o));document.body.style.overflow=o?'hidden':''});document.querySelectorAll('.mnav a').forEach(function(a){a.addEventListener('click',function(){mn.classList.remove('open');bg.classList.remove('x');bg.setAttribute('aria-expanded','false');mn.setAttribute('aria-hidden','true');document.body.style.overflow=''})})}
+})();
+
 function tF(el){var it=el.parentElement,w=it.classList.contains('open');document.querySelectorAll('.faqi.open').forEach(function(i){i.classList.remove('open');var q=i.querySelector('.faqq');if(q)q.setAttribute('aria-expanded','false')});if(!w){it.classList.add('open');el.setAttribute('aria-expanded','true')}}
-var nl=document.querySelectorAll('.nl a');window.addEventListener('scroll',function(){var c='';document.querySelectorAll('section[id]').forEach(function(s){if(window.scrollY>=s.offsetTop-160)c=s.id});nl.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+c)})},{passive:true});
 var cF=document.getElementById('cF');if(cF){cF.addEventListener('submit',function(e){e.preventDefault();var b=document.getElementById('sBtn'),o=b.innerHTML;b.textContent='Sending...';b.disabled=true;var fd=new FormData(this);fetch('send.php',{method:'POST',body:fd}).then(function(r){return r.json()}).then(function(d){if(d.ok){var t=document.getElementById('toast');if(t){t.classList.add('show');setTimeout(function(){t.classList.remove('show')},3200)}cF.reset()}else{alert('Unable to send enquiry right now. Please try again.')}}).catch(function(){alert('Network error. Please try again.')}).finally(function(){b.innerHTML=o;b.disabled=false})})}
 </script>
 </body>
