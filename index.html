@@ -27,24 +27,24 @@
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --bg:#040208;--bg2:#080510;
+  --bg:#030108;--bg2:#0b0514;
   --cream:#f0ece6;--body:rgba(240,236,230,.72);--muted:rgba(240,236,230,.56);--ghost:rgba(240,236,230,.28);
   --coral:#e8685e;--teal:#38d4ce;--gold:#daa844;
   --serif:'DM Serif Display',Georgia,serif;--sans:'Inter',sans-serif;
   --max:1240px;--ease:cubic-bezier(.16,1,.3,1);
 }
 html{scroll-behavior:smooth;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-body{background:#040208;color:var(--body);font-family:var(--sans);font-size:17px;line-height:1.7;overflow-x:hidden}
+body{background:radial-gradient(circle at 15% 18%,rgba(232,104,94,.18),transparent 38%),radial-gradient(circle at 84% 76%,rgba(56,212,206,.15),transparent 42%),linear-gradient(160deg,var(--bg) 0%,var(--bg2) 48%,#05020c 100%);color:var(--body);font-family:var(--sans);font-size:17px;line-height:1.7;overflow-x:hidden}
 ::selection{background:rgba(232,104,94,.3);color:#fff}
 a{text-decoration:none;color:inherit}ul{list-style:none}img{max-width:100%;display:block}
 
 /* AMBIENT MESH - vivid color orbs behind glass */
 .mesh{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
 .orb{position:absolute;border-radius:50%;filter:blur(90px);animation:orbF 22s ease-in-out infinite alternate;will-change:transform;contain:strict}
-.orb1{width:750px;height:750px;background:#e8685e;top:-12%;left:-8%;opacity:.22}
-.orb2{width:850px;height:850px;background:#2bbcc4;bottom:-18%;right:-12%;opacity:.18;animation-delay:-8s}
-.orb3{width:500px;height:500px;background:#daa844;top:38%;left:42%;opacity:.14;animation-delay:-15s}
-.orb4{width:650px;height:650px;background:#7c3aed;top:55%;left:-8%;opacity:.12;animation-delay:-11s}
+.orb1{width:750px;height:750px;background:#ff6f64;top:-12%;left:-8%;opacity:.34}
+.orb2{width:850px;height:850px;background:#31dde6;bottom:-18%;right:-12%;opacity:.3;animation-delay:-8s}
+.orb3{width:500px;height:500px;background:#f3bc4f;top:38%;left:42%;opacity:.22;animation-delay:-15s}
+.orb4{width:650px;height:650px;background:#8e52ff;top:55%;left:-8%;opacity:.2;animation-delay:-11s}
 @keyframes orbF{0%{transform:translate(0,0) scale(1)}50%{transform:translate(40px,-30px) scale(1.08)}100%{transform:translate(-20px,25px) scale(.94)}}
 
 /* ═══ LIQUID GLASS MATERIAL SYSTEM ═══
@@ -172,8 +172,9 @@ h2.st em{font-style:italic;color:var(--coral)}h2.st .tl{color:var(--teal)}
 .hchip{display:inline-flex;align-items:center;gap:9px;font-size:.72rem;font-weight:600;letter-spacing:.1em;color:var(--muted);margin-bottom:24px;opacity:0;animation:fU .9s .3s forwards;width:fit-content;padding:6px 16px 6px 12px;border-radius:100px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)}
 .cdot{width:7px;height:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 10px rgba(43,188,196,.4);animation:pu 2s ease-in-out infinite}
 @keyframes pu{0%,100%{opacity:1}50%{opacity:.4}}
-h1.h1{font-family:var(--serif);font-size:clamp(3rem,5vw,5rem);font-weight:400;line-height:1.06;letter-spacing:-.03em;color:var(--cream)}
-h1.h1 em{color:var(--coral);font-style:italic}
+h1.h1{font-family:var(--serif);font-size:clamp(3rem,5vw,5rem);font-weight:400;line-height:1.06;letter-spacing:-.03em;color:#fff;text-shadow:0 10px 34px rgba(0,0,0,.42)}
+h1.h1 .blk,h1.h1 .ind{background:linear-gradient(120deg,#ffffff 0%,#ffe5de 24%,#ffc084 48%,#8ff8f1 75%,#ffffff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 22px rgba(143,248,241,.18))}
+h1.h1 em{font-style:italic;background:linear-gradient(115deg,#ffd8cc 0%,#ff826f 44%,#ffb486 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none}
 h1.h1 .blk{display:block}h1.h1 .ind{display:block;padding-left:32px}
 .word{display:inline-block;opacity:0;transform:translateY(24px);transition:opacity .55s var(--ease),transform .55s var(--ease)}.word.vis{opacity:1;transform:translateY(0)}
 .hsub{font-size:1.08rem;line-height:1.85;color:var(--muted);max-width:480px;margin-top:28px;opacity:0;animation:fU .9s .9s forwards}
